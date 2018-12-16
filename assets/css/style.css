@@ -1,0 +1,306 @@
+body {
+    margin: 0; 
+    background-image: url(../images/wheat.png);
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    padding: 0px 10px 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 26px;
+    background-color: #7a576a;
+    border-color: #cccccc;
+    width: 100%;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 55px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+
+h1 {
+    margin: 10px 10px 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 28px;
+    text-align: left;
+}
+
+.center {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background: rgb(216, 216, 216);
+    border-color: #dddddd;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    overflow: auto;
+}
+
+
+hr { 
+    border-style: inset;
+    border-width: 1px;
+}
+
+#images {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 100px 10px 10px;
+    width: 938px;
+    height: 220px;
+}
+
+img.justinaustin {
+  height: 160px;
+  width: 125px;
+  overflow: auto;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+img. {
+  height: 150px;
+  width: 125px;
+  
+}
+
+
+footer {
+    padding-top: 10px;
+    margin: 0px 0px 2px 0px;
+    border-top: 8px solid #4aaaa5;
+    background: #7a576a;
+    width: 100%;
+    height: 50px;
+    color: rgb(216, 216, 216);
+    clear: both;
+    font-size: 16px;
+    bottom: fixed;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.portimg {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    display: block;
+}
+
+.textbox {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    background: #4aaaa5;
+    padding: 5px;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.column {
+    float: left;
+    margin-right: -50px;
+    margin-bottom: 10px;
+    width: 33.33%;
+    padding: 5px;
+    position: relative;
+}
+
+/* Clearfix (clear floats) */
+div.portrow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      resize: vertical;
+}
+  
+input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+}
+  
+input[type=submit]:hover {
+      background-color: #45a049;
+}
+  
+.container {
+      border-radius: 5px;
+      background-color: white;
+      padding: 0px 50px 220px 50px;
+      font-size: 16px;
+      height: 120px;
+      resize: both;
+}
+
+.text-block1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:link {
+    color: #a6e0dd;
+}
+
+a:visited {
+    color: #a4c8d3;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.portrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px 0px 50px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .portimg {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .portimg {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  .me {
+    float: left;
+    margin-right: 10px;
+}  
+p {
+    color: #777777;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+}
+.clearfix {
+    overflow: auto;
+}   
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 641px) {
+    .portimg {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 640px) {
+    .portimg {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+    /* Add media queries for responsiveness - when the screen is 640px wide or less, stack the links on top of each other */ 
+    @media screen and (max-width: 640px) {
+        .header a {
+          float: none;
+          display: inline;
+          text-align: left;
+        }
+        .header-right {
+          float: none;
+        }
+
+      }
+
+
+/* I can't figure out a reason to have a max. Minimums I get. I can't figure out a reason 
+to have a max 980 or max 786. I tried and tried. It, more or less, fits the criteria
+without using these. 
+*/
+@media screen and (min-width: 981px) {
+
+}
+
+@media screen and (max-width: 980px) {
+    }
+
+@media screen and (max-width: 768px) {
+
+}
+
+ 
+    
+      
